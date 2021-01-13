@@ -1,31 +1,18 @@
 ﻿using iText.Html2pdf;
-using iText.IO.Font;
-using iText.IO.Source;
-using iText.Kernel.Font;
+
 using iText.Kernel.Geom;
 using iText.Kernel.Pdf;
 using iText.Kernel.Pdf.Canvas;
 using iText.Kernel.Pdf.Xobject;
-using iText.Layout;
-using iText.Layout.Element;
-using iText.Layout.Properties;
-using iText.License;
-using iTextSharp.tool.xml.xtra.xfa;
 using System;
-using System.Collections.Generic;
 using System.IO;
 
 namespace ConsoleApp15
 {
     class Program
     {
-        static String inputFile = "C:\\Users\\Vitor.Mouzinho\\IdeaProjects\\GettingStarted\\Test\\src\\main\\java\\HebrewAddPage\\input for Vitor.pdf";
-        static String outputFile = "C:\\Users\\Vitor.Mouzinho\\IdeaProjects\\GettingStarted\\Test\\src\\main\\java\\HebrewAddPage\\test.pdf";
-        static String fontFile = "C:\\Users\\Vitor.Mouzinho\\IdeaProjects\\GettingStarted\\Test\\src\\main\\java\\HebrewAddPage\\test.ttf";
-        static String pathToLicense = "C:\\Users\\Vitor.Mouzinho\\IdeaProjects\\GettingStarted\\Test\\Vitor_iText_Developer_key.xml";
-        static String inputFilePath = "C:\\Users\\Vitor.Mouzinho\\IdeaProjects\\GettingStarted\\Test\\src\\main\\java\\MetaDataInfo\\021072700070689191_001_1 (1).pdf";
-        static String outputPdf = "C:\\Users\\Vitor.Mouzinho\\IdeaProjects\\GettingStarted\\Test\\src\\main\\java\\BrokenTable\\csharp.pdf";
-        static String inputHtml = "C:\\Users\\Vitor.Mouzinho\\IdeaProjects\\GettingStarted\\Test\\src\\main\\java\\BrokenTable\\pdf (3).html";
+        static String outputPdf = "outputPdfFile.pdf";
+        static String inputHtml = "inputHtml.html";
         static void Main(string[] args)
         {
             MemoryStream ms = new MemoryStream();
